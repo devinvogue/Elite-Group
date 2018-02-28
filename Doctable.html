@@ -1,0 +1,170 @@
+<!doctype html>
+<html>
+<head>
+	<title>List Of Doctors Available </title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style type="text/css">
+#myTable {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #ddd;
+  font-size: 18px;
+}
+#myInput {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  width: 95%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#myTable th, #myTable td {
+  text-align: left;
+  padding: 12px;
+}
+
+#myTable tr {
+  border-bottom: 1px solid #ddd;
+}
+#myTable tr.header, #myTable tr:hover {
+  background-color: #f1f1f1;
+}
+.menu {
+	position:fixed;
+	width:100%;
+	height:50px;
+	padding-top:20px;
+	background-color:rgba(0,10,20,0.5);
+	padding-right:10px;
+	text-align: right;
+}
+.logo{float:left;
+	  margin-top:-40px;}
+
+nav a {
+	text-decoration: none;
+	color: #fff;
+	margin-left:10px;
+	line-height:10px;
+}
+body{
+	background-color:lavender;
+}
+
+	</style>
+
+	
+<script>
+function myFunction() {
+  var input, filter, table, tr, td, i;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable");
+  tr = table.getElementsByTagName("tr");
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];
+    if (td) {
+      if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }       
+  }
+}
+</script>
+</head>
+	
+
+<body>
+<div class="menu">
+	<div class="logo">
+		<img src = "Doctian.png " height= "100px" width = "150px" alt="Doctian Photography logo"/>
+	</div>
+	<nav>
+		<a href="home.html">HOME</a>
+		<a href="#about">ABOUT</a>
+		<a href="#services">SERVICES</a>
+		<a href="#contact">CONTACT</a>
+		<a href="#book">BOOK</a>
+		<a href="sign.html">SIGN-IN<i class="fa fa-user-plus" style="font-size:36px"></i></a>
+	</nav>
+</div><br><br><br><br><br><br>
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+
+<table id="myTable">
+	<thead>
+		<th>Name</th>
+		<th>Specialist</th>
+		<th>Contact</th>
+		<th>Location</th>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Dr Kwasi</td>
+			<td>Surgeon</td>
+			<td> 0253645787</td>
+			<td>Accra</td>
+		</tr>	
+		<tr>
+			<td>Dr Kwabena</td>
+			<td>Gyneacolist</td>
+			<td> 0253645787</td>
+			<td>Accra</td>
+		</tr>
+		<tr>
+			<td>Dr Daniel</td>
+			<td>General Doctor</td>
+			<td> 0253645787</td>
+			<td>Accra</td>
+		</tr>
+		<tr>	
+			<td>Dr Randsford</td>
+			<td>Dentist</td>
+			<td> 0253645787</td>
+			<td>Accra</td>
+		</tr>
+		<tr>	
+			<td>Dr Abena</td>
+			<td>Midwife</td>
+			<td> 0253645787</td>
+			<td>Accra</td>
+			<tr>
+			<td>Dr George</td>
+			<td>Surgeon</td>
+			<td> 0253645787</td>
+			<td>Kumasi</td>
+		</tr>	
+		<tr>
+			<td>Dr Jeffrey</td>
+			<td>Gyneacolist</td>
+			<td> 0253645787</td>
+			<td>Kumasi</td>
+		</tr>
+		<tr>
+			<td>Dr Myriam</td>
+			<td>General Doctor</td>
+			<td> 0253645787</td>
+			<td>Kumasi</td>
+		</tr>
+		<tr>	
+			<td>Dr Kevin</td>
+			<td>Dentist</td>
+			<td> 0253645787</td>
+			<td>Kumasi</td>
+		</tr>
+		<tr>	
+			<td>Dr Rashida</td>
+			<td>Midwife</td>
+			<td> 0253645787</td>
+			<td>Kumasi</td>
+		</tr>
+	</tbody>
+</table>
+</body>
+
+
+</html>

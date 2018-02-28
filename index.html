@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html>
+	<head lang="en">
+		<meta charset="UTF-8">
+		<title>Home</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+
+	</head>
+		<style>
+
+* {
+			margin:0;
+			padding:0;
+			border:0;
+}
+html, body {
+	height: 100%;
+}
+
+h2{
+	margin-bottom:10px;
+	text-align:center;
+	color:darkcyan;}
+.menu {
+	position:fixed;
+	width:100%;
+	height:50px;
+	padding-top:20px;
+	background-color:rgba(0,10,20,0.5);
+	padding-right:10px;
+	text-align: center;
+}
+.logo{float:left;
+	  margin-top:-40px;}
+
+nav a {
+	text-decoration: none;
+	color: #fff;
+	margin-left:10px;
+	line-height:10px;
+}
+#text{margin-left:100px;}
+
+
+.sect {
+	height: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	text-align: left;
+
+}
+#mytab1{
+	width: 150px;
+	height: 80px;
+	padding: 30px;
+	border-spacing: 10px;
+}
+
+.sectOne {
+	background-color:lavender;
+	height:80%;
+}
+.container{
+	height:75%;
+    background-color: #7FBC9E;
+}
+#form1{
+	width: 400px;
+	height: 280px;
+	border: 2px solid #eee;
+	border-radius:8px;
+	margin:auto;
+	background-color:rgba(0,0,0,.2);
+}
+
+		.sectTwo{
+			content: "";
+    display: table;
+    background-color:white;
+	height:20em;
+    clear: both;
+	background-color:rgba(0,20,0,.4);
+		}
+.column{
+		width: 31.3%;
+			float: left;
+			margin: 2%;
+			border-right: 2px solid #EEEEEE;
+			}
+		.column1{
+			margin-right: 0%;
+			margin-top:2%;
+			border-right: 2px solid #EEEEEE;
+			}
+.contact{display:inline;}
+		
+	
+.mySlides{width:100%;
+		height:100%;}
+	
+
+.sectThree {
+	background-color:lavender;
+	height:30em;
+				}
+	.about{padding-top:80px;}
+	.text,.text1{width:600px;
+				margin:auto;
+				height:170px;
+				font-size:18px;
+				background-color:rgba(255,255,255,.4);}
+				
+				
+#input1,#input2{border-radius:10px;}
+
+.sectFour {
+	padding-top:
+	background-color:lavender;
+	height:30em;
+}
+
+.sectFive {
+	padding-top:100px;
+	background-image: url('book.jpg');
+	height:30em;
+}
+
+h1 {
+	color:Aquamarine;
+	padding-top:70px;
+	padding-bottom:30px;
+	text-align:center;
+}
+
+
+
+p{margin: 10px 0px 5px 0px;
+text-align:left;}
+#search {
+  width: 8%;
+  padding: 10px;
+  background: rgb(34,117,76);
+  color: white;
+  font-size: 15px;
+  border: 1px solid grey;
+  border-left: none; /* Prevent double borders */
+  cursor: pointer;
+}
+#submit{width:70px;
+		margin-left:100px;}
+
+button:hover {
+  background: rgb(142,234,170);
+}
+
+.footer{
+	width: 100%;
+	background-color: rgba(0,0,0,.3);
+	}
+	
+
+</style>
+ 
+	<body>
+
+
+<div class="menu">
+	<div class="logo">
+		<img src = "Doctian.png " height= "100px" width = "150px" alt="Doctian Photography logo"/>
+	</div>
+	<nav>
+		<a href="">HOME</a>
+		<a href="#about">ABOUT</a>
+		<a href="#services">SERVICES</a>
+		<a href="#book">BOOK</a>
+	</nav>
+</div>
+
+		
+	<div class="sect sectOne"> 
+	<div class= "container">
+		<img class="mySlides" src="image2.jpg" alt="beautiful nurse" />
+		<img class="mySlides" src="image3.jpg" alt="A doctor is typing" />
+		<img class="mySlides" src="doctor.jpg" alt="Laboratory" />
+		<img class="mySlides" src="image8.jpg" alt="Nurse atending to patient at home" />
+		<img class="mySlides" src="image5.jpg" alt="A doctor is typing" />
+		</div>
+		
+			
+	<div class="bar">
+	<input name="search" type="text" id="input1" length = 50 placeholder="Search for a doctor..." style="border: lavender ridge 2px; width:300px;
+					height:20px; padding: 10px; margin:50px 20px 50px 250px;"></input>
+	<input name="search1" type="text" id="input2" length = 50 placeholder="Near" style="border: lavender ridge 2px; width:300px;
+					height:20px; padding: 10px; margin:50px 20px 50px 100px;" ></input>
+	<a href="Doctable.html"><Button type = "submit" onclick="show()" id = "search"><i class="fa fa-search"></i></Button></a>
+	</div>
+	</div>
+
+
+	<div class="sect sectTwo">
+		
+		
+		<div class="column">
+            <h1>ABOUT US</h1>
+		<p class="summary">Doctian is a web application which aims at connecting patients to thier doctors without being physically present.
+		Eventhough the aforementioned hindrances have created a big hole in the healthcare system, Doctian is here for those who are affected by the problems listed above and have more dificulties in seeking good quality medical help when they so desire.
+		The uniqueness of this application is that makes it makes easier and faster reach a medical practitioner at ones own convenience with any hustle. </p>
+		<br><br>
+		<a href="#about"><Button type = "submit"><h4>Read More</h4></Button></a>
+          
+		</div>
+		<div class="column">
+			<h1>SERVICES</h1>
+		<p>The main focus of Doctian is to develop a technologically driven approach to the delivery of  public health services to poeple wherever they are within the country.</p>
+		<ul>
+			<li>Online Help</li>
+			<li>Team Of Experts</li>
+			<li>Taking Heart Rate</li>
+			<li>Giving Advice</li>
+
+		</ul>
+		<br><br>
+		<a href="#services"><Button type = "submit"><h4>Read More</h4></Button></a>
+		
+		</div>
+		<div class="column1">
+			<h1>BOOK</h1>
+			<p>Doctian acts as option for those people who are not able to go to hospital.This does not mean that the need to visit to hospital for proper check-up should be stopped.
+			With Doctian however,people would be able to reach good and well qualified doctors through a video call.</p>
+			<br><br>
+			<a href="#book"><Button type = "submit"><h4>Read More</h4></Button></a>
+			</div>
+	</div>
+	<div class="sect sectThree" id='about' style="background-image: url('amazing-doctor.jpg')">
+		<h2 class="about">ABOUT US</h2>
+		<div class="text">Doctian is a web application which aims at connecting patients to thier doctors without being physically present.
+		It doesn't matter where one is within the country's jurisdiction; your doctor is just a call away.
+		Eventhough the aforementioned hindrances have created a big hole in the healthcare system, Doctian is here for those who are affected by the problems listed above and have more dificulties in seeking good quality medical help when they so desire.</div>
+		<div class="text1">
+		The uniqueness of this application is that makes it makes easier and faster reach a medical practitioner at ones own convenience with any hustle. 
+		Doctian acts as option for those people who are not able to go to hospital.This does not mean that the need to visit to hospital for proper check-up should be stopped.
+			With Doctian however,people would be able to reach good and well qualified doctors through a video call.
+		The main focus of Doctian is to develop a technologically driven approach to the delivery of  public health services to poeple wherever they are within the country.
+		</div>
+		</div>
+
+	<div class="sect sectFour" id='services'>
+		<h2>SERVICES</h2>
+		<img src= "image7.jpg" height="400px" style="float:left;">
+		<p>The main focus of Doctian is to develop a technologically driven approach to the delivery of  public health services to poeple wherever they are within the country.</p>
+		<ul style="margin-left:2px;
+text-align:left; list-style-type:none;" >
+	
+			<li><b>Online Help</b></li><br>
+			<p>Our Online Help is based on helping patient as fast as possible. Our specialist will respond to your need in a minute</p><br>
+			<li><b>Team Of Experts</b></li><br>
+			<p> Our team provides the best qualities of services, are friendly are very good</p><br>
+			<li><b>Taking Heart Rate</b></li><br>
+			<p>We help our patient to take their heart rate and the first medical attentions</p><br>
+			<li><b>Giving Advice</b></li><br>
+			<p>Giving advice is one of our best services. We help you take precautions on your wealth </p>
+			</ul>
+	</div>
+
+	<div class="sect sectFive" id='book'>
+		<h2 class="Appoint">Book an Appointment</h2>
+		<form id = "form1">
+			<table id = "mytab1">
+				<caption>Book An Appointment</caption>
+				<tr>
+					<td>Name:</td>
+					<td><input type="text" name = "fname" placeholder = "Enter your name" required></td>
+				</tr>
+				<tr>
+					<td>Age:</td>
+					<td><input type="date"  name = "userage" placeholder = "Enter your age" required></td>
+				</tr>
+				<tr>
+					<td>Email:</td>
+					<td><input type="text" name = "useremail" placeholder = "Enter your email" required></td>
+				</tr>
+				<tr>
+					<td>Contact Number:</td>
+					<td><input type="text" name = "usercontact" placeholder = "Enter your phone Number" required></td>
+				</tr>
+				<tr>
+					<td>Select a Doctor:</td>
+					<td><SELECT>
+						<OPTION value = "opt1">Select a Doctor</OPTION>
+						<OPTION value = "opt2">Surgeon</OPTION>
+						<OPTION value = "opt3">Dentist</OPTION>
+						<OPTION value = "opt4">General Doctor</OPTION>
+						<OPTION value = "opt5">Midwife</OPTION>
+						<OPTION value = "opt6">Gyneacolist</OPTION>
+					</SELECT></td>
+				</tr>
+				<tr>
+				<br>
+					<td><Button type = "submit" name = "subbut" id="submit">Submit</Button></td>
+				</tr>
+			</table>
+		</form>
+		<div class="image">
+		
+		</div>
+		</div>
+		
+		  
+
+			<div class="footer">
+			&copy; Doctian
+			<div class="contact">
+		<p><i class='fa fa-phone'>0240000111</i></p><br>
+		<p><i class="fas fa-envelope">020002222</i></p><br>
+		<p><i class="fab fa-facebook">doctian</i></p><br>
+		<p><i class="fab fa-twitter">doctian</i></p><br>
+		<p><i class="fab fa-instagram">doctian</i></p>
+			</div>
+			</div>
+	<script src="Hos.js">
+			function show(){
+				var Name = document.getElementById("input1").value;
+				var name2 = document.getElementById("input2").value;
+
+					if(name == "Surgeon" && name2 == "Accra"){
+
+						window.open("Doctable.html");
+					}
+					else if(name == "Gyneacolist" && name2 == "Accra"){
+
+						window.open("Doctable.html");
+					}
+					else if(name == "Dentist" && name2 == "Accra"){
+
+						window.open("Doctable.html");
+					}
+					else if(name == "Midwife" && name2 == "Accra"){
+
+						window.open("Doctable.html");
+					}
+					else if(name == "General Doctor" && name2 == "Accra"){
+
+						window.open("Doctable.html");
+					}
+					else{
+
+					}
+				
+	</script>
+		
+	</body>
+</html>
